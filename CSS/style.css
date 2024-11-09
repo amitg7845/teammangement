@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Hambarger starts herer */
+.hamburger-menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the right */
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    /* Add padding for better spacing */
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style the hamburger icon */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.menu-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 410;
+}
+
+/* Show the navigation menu when the checkbox is checked */
+.menu-toggle:checked+.menu-icon+.nav-menu {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    border-bottom: 1px solid #444;
+}
+
+.nav-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+/* Optional button styling */
+.addToTeam,
+.addFormData {
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+/* Card Starts here */
+.Wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardWrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.card-crossBtn-wrp {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+.card-crossBtn-wrp .image {
+    width: 300px;
+    height: 300px;
+}
+
+.delete-member,
+.delete-new-member {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.formWrp {
+    color: white;
+    padding: 40px 21px 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-none {
+    display: none;
+}
+
+.closeBtn {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    right: 23px;
+    top: 11px;
+    cursor: pointer;
+}
+
+#form {
+    max-width: 400px;
+}
+
+label {
+    font-size: large;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    max-width: 325px;
+}
+
+.fName {
+    padding-bottom: 16px;
+}
+
+.image-wrapper {
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* About Us */
+
+main {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+main .container {
+    /* width: 90%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .container h2 {
+    color: #222;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main .container h3 {
+    color: #444;
+    font-size: 22px;
+    font-weight: semi-bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main .container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1001;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Contact Us */
+.contact-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-right-content_wrapper {
+    display: flex;
+}
+
+#map {
+    position: absolute;
+    height: 779px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.leaflet-bottom {
+    z-index: 998;
+}
+
+.content-info-wrapper {
+    display: flex;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 50px 20px;
+}
+
+.contact-info,
+.contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-info h2 {
+    color: #222;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}

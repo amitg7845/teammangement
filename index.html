@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Team Management System Test</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <header class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/teamMember.html">Team Members</a></li>
+                <li><a href="/aboutUs.html">About Us</a></li>
+                <li><a href="/contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="Wrapper team-members">
+            <button type="button" class="addToTeam">Add To Team</button>
+
+            <div class="cardWrp">
+                <!-- <div class="card-crossBtn-wrp">
+                    <div class="card">
+                        <img src="" alt="" srcset="">
+                        <div class="name" id=1>Gary Wyman</div>
+                    </div>
+                    <img src="/img/icons8-cancel-50.png" class="delete-btn" alt="delete" srcset="">
+                </div>
+            </div> -->
+        </section>
+
+        <section class="formWrp d-none">
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="off" required>
+                <div class="image-wrapper">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <img src="./img/close-icon.svg" alt="close button" class="closeBtn">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/JS/common.js"></script>
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>

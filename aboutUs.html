@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Team Management System Test</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/index.html">Home Page</a></li>
+                <li><a href="/teamMember.html">Team Members</a></li>
+                <li><a href="/contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to <strong>Company Name</strong>, where we strive to deliver exceptional service and innovative solutions. Established in 2024, we have been dedicated to meeting the needs of our clients with professionalism and expertise.</p>
+                
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide top-quality products and services that exceed our clients' expectations. We are committed to continuous improvement and innovation to stay ahead in a rapidly changing market.</p>
+                
+                <h3>Our Team</h3>
+                <p>Our team comprises highly skilled professionals with diverse backgrounds and extensive experience. We work together to achieve our goals and support each other in delivering outstanding results.</p>
+                
+                <h3>Contact Us</h3>
+                <p>If you have any questions or would like to learn more about what we do, please feel free to <a href="/contactUs.html">contact us</a>. We are here to help and look forward to hearing from you!</p>
+            </div>
+        </section>
+        <section class="formWrp d-none">
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <img src="./img/close-icon.svg" alt="close button" class="closeBtn">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/JS/common.js"></script>
+</body>
+</html>
